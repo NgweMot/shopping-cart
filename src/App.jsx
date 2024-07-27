@@ -4,6 +4,7 @@ import {
   CategoriesComponent,
   FooterComponent,
   HeaderComponent,
+  ProductSection,
 } from "./components";
 
 const App = () => {
@@ -11,6 +12,7 @@ const App = () => {
     <Container>
       <HeaderComponent />
       <CategoriesComponent />
+      <ProductSection />
       <FooterComponent />
     </Container>
   );
