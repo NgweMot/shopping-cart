@@ -1,8 +1,10 @@
 import React, { useContext } from "react";
 import RatingComponent from "./Rating.component";
+import { Link } from "react-router-dom";
 
 const ProductCardComponent = ({
   product: {
+    id,
     title,
     price,
     image,
@@ -11,7 +13,7 @@ const ProductCardComponent = ({
 }) => {
  
   return (
-    <div className="bg-white border border-gray-200 rounded-lg shadow p-5 flex flex-col items-start gap-5">
+    <Link to={`/ProductDetail/${id}`} className="bg-white border border-gray-200 rounded-lg shadow p-5 flex flex-col items-start gap-5">
       <div className="">
         <img src={image} className="h-40" alt="product image" />
       </div>
@@ -23,7 +25,7 @@ const ProductCardComponent = ({
           Add To Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 
