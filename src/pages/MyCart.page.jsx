@@ -1,7 +1,13 @@
 import React from "react";
+import { BreadcrumbComponent, MyCartSection } from "../components";
 
 const MyCartPage = () => {
-  return <div>MyCartPage</div>;
+  return (
+    <>
+      <BreadcrumbComponent currentPageTitle={"My Cart"} />
+      <MyCartSection />
+    </>
+  );
 };
 
 export default MyCartPage;
